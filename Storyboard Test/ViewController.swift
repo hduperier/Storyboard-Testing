@@ -9,9 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userTestField: UITextField!
+    @IBOutlet weak var passwordTestField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        userTestField.layer.cornerRadius = 22
+        passwordTestField.layer.cornerRadius = 22
     }
 
 
