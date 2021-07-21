@@ -12,12 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var userTestField: UITextField!
     @IBOutlet weak var passwordTestField: UITextField!
     
+    var radius = 22
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        userTestField.layer.cornerRadius = 22
-        passwordTestField.layer.cornerRadius = 22
+        userTestField.layer.cornerRadius = CGFloat(radius)
+        passwordTestField.layer.cornerRadius = CGFloat(radius)
     }
 
 
